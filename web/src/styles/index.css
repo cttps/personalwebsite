@@ -1,3 +1,5 @@
+/* cmd + shift + P   ->   Change language mode   ->   tailwindcss (to get rid of yellow underline) */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
