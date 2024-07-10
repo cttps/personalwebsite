@@ -25,9 +25,12 @@ func main() {
 	r.NoRoute(func(ctx *gin.Context) { ctx.JSON(http.StatusNotFound, gin.H{}) })
 	r.Static("/static", "./web/build/static")
 
-	r.GET("/", func(ctx *gin.Context) {
-		ctx.File("./web/build/index.html")
-	})
+	frontendRoutes := []string{"/", "/about"}
+	for _, route := range frontendRoutes {
+		r.GET(route, func(ctx *gin.Context) {
+			ctx.File("./web/build/index.html")
+		})
+	}
 
 	fmt.Println("Started on 8080")
 	r.Run(":8080")

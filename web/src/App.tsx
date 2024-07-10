@@ -1,17 +1,28 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
 import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl text-center my-4 mx-2">cttps's personal website aaaaaaaaaaaaaaaaaaa a a a a  aaa aa a aefffffffff</h1>
-      <div className='grid grid-cols-12 divide-x-2'>
-        < Sidebar />
-        <div className='w-full col-span-10 text-center'>
-          <p className='m-96'>hi</p>
+    <React.StrictMode>
+      <Router >
+        <div className="App">
+          <h1 className="text-3xl text-center my-4 mx-2">cttps's personal website</h1>
+          <div className='grid grid-cols-9 divide-x-2'>
+            < Sidebar />
+            <div className='w-full col-span-8 text-center'>
+              <Routes>
+                <Route path="/" element={ <Home/> } />
+                <Route path="/about" element={ <About/> } />
+                {/* Add more routes as needed */}
+              </Routes>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </Router>
+    </React.StrictMode>
   );
 }
 

@@ -1,11 +1,12 @@
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function App() {
     return (
-        <div className="col-span-2 text-center">
-            <a href="/home">home</a>
+        <div className="col-span-1 text-center">
+            <Link to="/">home</Link>
             <br />
-            <a href="/about">about</a>
+            <Link to="/about">about</Link>
         </div>
     );
   }
