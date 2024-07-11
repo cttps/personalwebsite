@@ -14,6 +14,7 @@ CSR happens with the javascript after u build ur react app. So serving the stati
 
 func main() {
 	r := gin.Default()
+	r.SetTrustedProxies(nil)
 
 	api := r.Group("/api")
 	{
