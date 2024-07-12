@@ -1,3 +1,6 @@
+//go:build prod
+// +build prod
+
 package main
 
 import (
@@ -13,8 +16,12 @@ CSR happens with the javascript after u build ur react app. So serving the stati
 */
 
 func main() {
+	gin.SetMode(gin.ReleaseMode)
+
 	r := gin.Default()
 	r.SetTrustedProxies(nil)
+
+	// Comment if you want to see server debug logs
 
 	api := r.Group("/api")
 	{
@@ -30,9 +37,12 @@ func main() {
 	for _, route := range frontendRoutes {
 		r.GET(route, func(ctx *gin.Context) {
 			ctx.File("./web/build/index.html")
-		})
+
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
 	}
 
-	fmt.Println("Started on 8080")
-	r.Run(":8080")
+	fmt.Println("Started on ", port)
+	r.Run(":", port)
 }
