@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Projects from './pages/Projects';
 import Sidebar from './components/Sidebar';
 import Topbar from './components/Topbar'
 
@@ -18,7 +19,7 @@ function App() {
               <Routes>
                 <Route path="/" element={ <Home/> } />
                 <Route path="/about" element={ <About/> } />
-                <Route path="/projects" element={ <Home/> } />
+                <Route path="/projects" element={ <Projects/> } />
                 {/* Add more routes as needed */}
               </Routes>
             </div>
