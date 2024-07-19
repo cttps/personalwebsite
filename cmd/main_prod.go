@@ -1,11 +1,11 @@
 //go:build prod
-// +build prod
 
 package main
 
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
@@ -37,6 +37,8 @@ func main() {
 	for _, route := range frontendRoutes {
 		r.GET(route, func(ctx *gin.Context) {
 			ctx.File("./web/build/index.html")
+		})
+	}
 
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -44,5 +46,5 @@ func main() {
 	}
 
 	fmt.Println("Started on ", port)
-	r.Run(":", port)
+	r.Run(":" + port)
 }

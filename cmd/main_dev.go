@@ -1,5 +1,4 @@
 //go:build dev
-// +build dev
 
 package main
 
@@ -59,5 +58,5 @@ func main() {
 	}
 
 	fmt.Println("Started on ", port)
-	r.Run(":", port)
+	r.Run(":" + port)
 }
