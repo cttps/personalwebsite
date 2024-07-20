@@ -9,6 +9,8 @@ export default function Sidebar() {
             <Link to="/about">about</Link>
             <br />
             <Link to="/projects">projects</Link>
+            <br />
+            <Link to="/omTimer">timer</Link>
         </div>
     );
   }
