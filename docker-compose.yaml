@@ -1,0 +1,7 @@
+services:
+  build:
+    build: .
+    # command: npx tailwindcss -i ./frontend/static/input.css -o ./frontend/static/output.css --watch
+    tty: true
+    ports:
+      - "8080:8080"
