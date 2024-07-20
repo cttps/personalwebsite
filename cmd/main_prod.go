@@ -46,5 +46,5 @@ func main() {
 	}
 
 	fmt.Println("Started on ", port)
-	r.Run(":" + port)
+	r.Run("0.0.0.0:" + port)
 }
