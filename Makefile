@@ -1,12 +1,12 @@
-run: build-dev
+run: dev
 	@./bin/app
 
 # i think npm build auto minifies tailwindcss
-build-prod:
+prod:
 	@cd web && npm run build && cd ..
 	@go build -tags prod -o bin/app cmd/main_prod.go
 
-build-dev:
+dev:
 	@cd web && npm run build # `&& cd ..` not necessary because each line is done in a seperate shell
 	@go build -o bin/app cmd/main_dev.go
 
