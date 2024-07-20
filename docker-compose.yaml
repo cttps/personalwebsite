@@ -1,6 +1,8 @@
 services:
   build:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     # command: npx tailwindcss -i ./frontend/static/input.css -o ./frontend/static/output.css --watch
     tty: true
     ports:
