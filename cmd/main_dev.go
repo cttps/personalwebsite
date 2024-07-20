@@ -30,7 +30,6 @@ func main() {
 		- SET UP SECURE HEADER/MW FOR APP
 		- DO OTHER SECURITY STUFF FROM ARTICLE: https://slashdev.io/-guide-to-building-secure-backends-in-gin-golang-in-2024-2
 		- MAYBE NEED TO SECURITIZE CORS (LOOK INTO)
-		- FIX BUILD TAGS
 		- PUT ON RAILWAY
 
 	*/
@@ -45,7 +44,7 @@ func main() {
 	r.NoRoute(func(ctx *gin.Context) { ctx.JSON(http.StatusNotFound, gin.H{}) })
 	r.Static("/static", "./web/build/static")
 
-	frontendRoutes := []string{"/", "/about"}
+	frontendRoutes := []string{"/", "/about", "/projects", "/omTimer"}
 	for _, route := range frontendRoutes {
 		r.GET(route, func(ctx *gin.Context) {
 			ctx.File("./web/build/index.html")
