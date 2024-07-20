@@ -1,6 +1,8 @@
 
 export default function Home() {
     return (
-        <p className='m-96'>hey, welcome to my website!</p>
+        <div className="flex w-full h-full justify-center align-middle text-center">
+            <p className=''>hey, welcome to my website!</p>
+        </div>
     );
   }
