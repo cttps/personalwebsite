@@ -10,11 +10,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-/* notes:
-CSR happens with the javascript after u build ur react app. So serving the static files with go doesn't make it redundant.
-( the entire benefit it to modularly load each component of the app as needed, instead of loading the entire app at once.)
-*/
-
 func main() {
 	gin.SetMode(gin.ReleaseMode)
 
@@ -33,7 +28,7 @@ func main() {
 	r.NoRoute(func(ctx *gin.Context) { ctx.JSON(http.StatusNotFound, gin.H{}) })
 	r.Static("/static", "./web/build/static")
 
-	frontendRoutes := []string{"/", "/about", "/projects", "/omTimer"}
+	frontendRoutes := []string{"/", "/about", "/projects", "/omTimer", "/contact"}
 	for _, route := range frontendRoutes {
 		r.GET(route, func(ctx *gin.Context) {
 			ctx.File("./web/build/index.html")
