@@ -8,9 +8,6 @@ export default function About() {
                 i've been coding since very young and tbh it has taken me a while to figure out if i really do love coding,
                 but building projects, solving problems, and learning seemingly impossible things is what i really enjoy and i think that's what  matters.
             </p>
-            <p>
-                hi
-            </p>
         </div>
     );
   }
