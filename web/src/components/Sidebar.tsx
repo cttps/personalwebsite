@@ -7,6 +7,7 @@ export default function Sidebar() {
             <Link to="/">home</Link>
             <Link to="/about">about</Link>
             <Link to="/projects">projects</Link>
+            <Link to="/posts">posts</Link>
             <Link to="/omTimer">timer</Link>
             <Link to="/contact">contact</Link>
         </div>

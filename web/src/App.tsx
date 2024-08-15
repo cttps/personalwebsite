@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import OmTimer from "./pages/OminousTimer"
 import Contact from './pages/Contact';
+import Posts from './pages/Posts';
 import Sidebar from './components/Sidebar';
 import Topbar from './components/Topbar'
 
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/" element={ <Home/> } />
                 <Route path="/about" element={ <About/> } />
                 <Route path="/projects" element={ <Projects/> } />
+                <Route path="/posts" element={ <Posts/> } />
                 <Route path="/contact" element={ <Contact/> } />
                 <Route path="/omTimer" element={ <OmTimer/> } />
 

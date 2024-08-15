@@ -31,7 +31,7 @@ export default function Projects() {
                                 Overall great experience
                             </p>
                         </div>
-                        <div className="grid place-items-center grid-cols-2 w-full text-center">
+                        <div className="grid place-items-center grid-cols-2 w-full text-center mt-2">
                             <a className="px-3 py-1 bg-blue-50 rounded-xl shadow" href="https://github.com/mxpph/quickdraw-vs"> github </a>
                             <a className="px-3 py-1 bg-blue-50 rounded-xl shadow">link</a>
                         </div>

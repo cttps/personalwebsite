@@ -28,7 +28,7 @@ func main() {
 	r.NoRoute(func(ctx *gin.Context) { ctx.JSON(http.StatusNotFound, gin.H{}) })
 	r.Static("/static", "./web/build/static")
 
-	frontendRoutes := []string{"/", "/about", "/projects", "/omTimer", "/contact"}
+	frontendRoutes := []string{"/", "/about", "/projects", "/omTimer", "/contact", "/posts"}
 	for _, route := range frontendRoutes {
 		r.GET(route, func(ctx *gin.Context) {
 			ctx.File("./web/build/index.html")
