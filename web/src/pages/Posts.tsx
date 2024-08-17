@@ -1,3 +1,5 @@
+import Post from "../components/Post";
+
 
 export default function Posts() {
     return (
@@ -6,6 +8,7 @@ export default function Posts() {
             <p className='text-justify'>
                 this is wher i want to write little posts about stuff im interested in. basically longer x threads, though i might quote some eventually...
             </p>
+            <Post />
         </div>
     );
   }
