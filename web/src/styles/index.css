@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  @apply text-blue-400 underline
+  @apply text-[#888] underline underline-offset-2 rounded-full
   /* color: #00a2e7; */
 }
 
