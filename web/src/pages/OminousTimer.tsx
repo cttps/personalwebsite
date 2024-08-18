@@ -44,6 +44,7 @@ export default function OmTimer() {
         <div className="p-8 text-justify">
             <h1 className="text-2xl my-2 mb-4">my timers</h1>
             <div className="grid w-full text-center">
+            { (remaining > 0) ? (
                 <div className="p-2 shadow-lg grid rounded-xl place-items-center border bg-pink-50">
                     <h2 className="my-6 text-2xl font-semibold">Seeing the stars again</h2>
                     <div className="w-full bg-pink-200 h-4 rounded-full">
@@ -77,6 +78,11 @@ export default function OmTimer() {
                         {zeroOnePercentPercentage.toFixed(2)}% of the way through
                     </p>
                 </div>
+            ) : (
+                <div className="p-2 shadow-lg grid rounded-xl place-items-center border bg-pink-50">
+                    <h2 className="my-6 text-6xl font-semibold">I HAVE SEEN THE STARS!</h2>
+                </div>
+            )}
             </div>
         </div>
     );
