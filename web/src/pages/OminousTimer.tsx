@@ -43,10 +43,10 @@ export default function OmTimer() {
     return (
         <div className="p-8 text-justify">
             <h1 className="text-2xl my-2 mb-4">my timers</h1>
-            <div className="grid w-full text-center">
+            <div className="grid w-full text-center overflow-visible">
             { (remaining > 0) ? (
-                <div className="p-2 shadow-lg grid rounded-xl place-items-center border bg-pink-50">
-                    <h2 className="my-6 text-2xl font-semibold">Seeing the stars again</h2>
+                <div className="p-2 grid rounded-xl place-items-center bg-gradient-to-b from-[rgb(255,246,253)] to-pink-100 shadow-2xl shadow-pink-200">
+                    <h2 className="my-6 text-2xl text-white font-semibold drop-shadow-[0_2px_4px_rgba(244,114,182,1)]">Seeing the stars again</h2>
                     <div className="w-full bg-pink-200 h-4 rounded-full">
                         <div
                             className="bg-pink-400 h-4 rounded-full"
@@ -80,7 +80,7 @@ export default function OmTimer() {
                 </div>
             ) : (
                 <div className="p-2 shadow-lg grid rounded-xl place-items-center border bg-pink-50">
-                    <h2 className="my-6 text-6xl font-semibold">I HAVE SEEN THE STARS!</h2>
+                    <h2 className="my-6 text-6xl text-white font-semibold drop-shadow-[0_2px_4px_rgba(244,114,182,1)]">I HAVE SEEN THE STARS</h2>
                 </div>
             )}
             </div>
