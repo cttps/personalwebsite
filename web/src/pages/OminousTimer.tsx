@@ -81,6 +81,18 @@ export default function OmTimer() {
             ) : (
                 <div className="p-2 shadow-lg grid rounded-xl place-items-center border bg-pink-50">
                     <h2 className="my-6 text-6xl text-white font-semibold drop-shadow-[0_2px_4px_rgba(244,114,182,1)]">I HAVE SEEN THE STARS</h2>
+                    <p>(i think i have)</p>
+                    <p>they're pretty. they shine bright.</p>
+                    <p>in the day, they're the sun.</p>
+                    <p>everyone notices them. everybodys happier because of them.</p>
+                    <p>they're the wamth you need most, and the light that lets you be seen.</p>
+                    <p>at night, they're the stars.</p>
+                    <p>everyone is in awe at their beauty. nobody can stop thinking about them.</p>
+                    <p>they see you when you sleep, and their existence gives you a smile as you drift away.</p>
+                    <p>i missed the stars. it was hard without them. i needed them.</p>
+                    <p>im happy i can see them again.</p>
+                    <p>i wont ever take them for granted.</p>
+                    <p>i love the stars</p>
                 </div>
             )}
             </div>
