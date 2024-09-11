@@ -4,10 +4,10 @@ export default function Projects() {
         <>
             <div className="p-8 grid text-justify w-full">
                 <h1 className='text-2xl my-2 mb-4'>projects</h1>
-                <div className="grid md:grid-cols-2 gap-2 w-full">
+                <div className="grid gap-2 w-full">
                     <div className="p-2 shadow-lg grid rounded-xl place-items-center border">
                         <h2 className="text-xl my-2">this website</h2>
-                        <div className="grid text-justify w-full p-4 max-h-52 overflow-scroll">
+                        <div className="grid text-justify w-full p-4 max-w-3xl overflow-scroll">
                             <p>
                                 This is my personal website. Not much special about it. It's using react tsx, tailwind, and go for the backend.
                                 Its pretty basic and ugly. The <a href="./omTimer">timer</a> page was pretty cool to make though.
@@ -15,13 +15,13 @@ export default function Projects() {
                             </p>
                         </div>
                         <div className="grid place-items-center grid-cols-2 w-full text-center">
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow" href="https://github.com/cttps/personalwebsite"> github </a>
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow" href="./">link</a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="https://github.com/cttps/personalwebsite"> github </a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="./">link</a>
                         </div>
                     </div>
                     <div className="p-2 shadow-lg grid rounded-xl place-items-center border">
                         <h2 className="text-xl my-2">quickdraw vs</h2>
-                        <div className="grid text-justify w-full p-4 max-h-52 overflow-scroll">
+                        <div className="grid text-justify w-full p-4 max-w-3xl overflow-scroll">
                             <p>
                                 A project a friend and I started. Essentially it's a game where you compete to see who's drawing can get classified by
                                 a NN first. It was my first time training any NN, so I learned a lot. I used pytorch for this one.
@@ -32,8 +32,8 @@ export default function Projects() {
                             </p>
                         </div>
                         <div className="grid place-items-center grid-cols-2 w-full text-center mt-2">
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow" href="https://github.com/mxpph/quickdraw-vs"> github </a>
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow">link</a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="https://github.com/mxpph/quickdraw-vs"> github </a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]">link</a>
                         </div>
                     </div>
                 </div>

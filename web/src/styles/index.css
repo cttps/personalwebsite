@@ -17,10 +17,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  @apply text-[#888] underline underline-offset-2 rounded-full
+/* a { */
+  /* @apply text-[#888] underline underline-offset-2 rounded-full */
   /* color: #00a2e7; */
-}
+/* } */
 
 h1,h2,h3 {
   line-height: 1.2
