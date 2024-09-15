@@ -35,7 +35,7 @@ export default function Projects() {
                         </div>
                         <div className="grid place-items-center grid-cols-2 w-full text-center mt-2">
                             <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="https://github.com/mxpph/quickdraw-vs"> github </a>
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]">link</a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="https://quickdraw-vs.com">link</a>
                         </div>
                     </div>
                     <div className="p-2 shadow-lg grid rounded-xl place-items-center border">
