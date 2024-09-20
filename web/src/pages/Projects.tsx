@@ -17,7 +17,7 @@ export default function Projects() {
                             </p>
                         </div>
                         <div className="grid place-items-center grid-cols-2 w-full text-center">
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]">no github </a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:bg-blue-200 transition-all duration-500">no github </a>
                             <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="https://cheatseat.ca">link</a>
                         </div>
                     </div>
