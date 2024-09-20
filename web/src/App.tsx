@@ -16,9 +16,9 @@ function App() {
         <div className="App">
           <Topbar />
           {/* <h1 className="text-3xl text-center my-4 mx-2">cttps's personal website</h1> */}
-          <div className='grid grid-cols-9 md:divide-x-2 mt-4'>
+          <div className='grid grid-cols-9 divide-y-2 gap-4 md:divide-x-2 md:divide-y-0 mt-4'>
             < Sidebar />
-            <div className='w-full col-span-9 md:col-span-8 text-center'>
+            <div className='w-full col-span-9 md:col-span-8 text-center pt-4'>
               <Routes>
                 <Route path="/" element={ <Home/> } />
                 <Route path="/about" element={ <About/> } />
