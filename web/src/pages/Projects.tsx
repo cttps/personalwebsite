@@ -18,7 +18,7 @@ export default function Projects() {
                         </div>
                         <div className="grid place-items-center grid-cols-2 w-full text-center">
                             <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:bg-blue-200 transition-all duration-500">no github </a>
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="https://cheatseat.ca">link</a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:bg-blue-200 transition-all duration-500" href="https://cheatseat.ca">link</a>
                         </div>
                     </div>
                     <div className="p-2 shadow-lg grid rounded-xl place-items-center border">
@@ -34,8 +34,8 @@ export default function Projects() {
                             </p>
                         </div>
                         <div className="grid place-items-center grid-cols-2 w-full text-center mt-2">
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="https://github.com/mxpph/quickdraw-vs"> github </a>
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="https://quickdraw-vs.com">link</a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:bg-blue-200 transition-all duration-500" href="https://github.com/mxpph/quickdraw-vs"> github </a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:bg-blue-200 transition-all duration-500" href="https://quickdraw-vs.com">link</a>
                         </div>
                     </div>
                     <div className="p-2 shadow-lg grid rounded-xl place-items-center border">
@@ -48,8 +48,8 @@ export default function Projects() {
                             </p>
                         </div>
                         <div className="grid place-items-center grid-cols-2 w-full text-center">
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="https://github.com/cttps/personalwebsite"> github </a>
-                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:px-[500px] hover:py-[300px] transition-all ease-out duration-[5s]" href="./">recursion?</a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:bg-blue-200 transition-all duration-500" href="https://github.com/cttps/personalwebsite"> github </a>
+                            <a className="px-3 py-1 bg-blue-50 rounded-xl shadow hover:bg-blue-200 transition-all duration-500" href="./">recursion?</a>
                         </div>
                     </div>
                 </div>
